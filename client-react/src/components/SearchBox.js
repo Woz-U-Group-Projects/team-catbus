@@ -10,7 +10,8 @@ const SearchBox = ({ searchChange }) => {
   );
 }
 
+export default SearchBox;
 
 
-<input ref={this.taskName} />
-  <button type="button" className="btn btn-primary" onClick={this.addTask}>add</button>
+{/* <input ref={this.taskName} />
+  <button type="button" className="btn btn-primary" onClick={this.addTask}>add</button> */}

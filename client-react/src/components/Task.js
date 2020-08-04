@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import SearchBox from '../components/SearchBox';
 import '../task.min.css'
 class Task extends React.Component {
   constructor(props) {
@@ -39,7 +40,7 @@ class Task extends React.Component {
     return (
       <div className='tc'>
         <h3 className='f1'>List of tasks (React)</h3>
-
+        <SearchBox />
         <ul>
           {this.state.tasks.map(p => (
             <li key={p.taskid}>
