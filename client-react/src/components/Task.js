@@ -38,9 +38,8 @@ class Task extends React.Component {
   render() {
     return (
       <div className='tc'>
-        <h3 className=''>List of tasks (React)</h3>
-        <input ref={this.taskName} />
-        <button type="button" className="btn btn-primary" onClick={this.addTask}>add</button>
+        <h3 className='f1'>List of tasks (React)</h3>
+
         <ul>
           {this.state.tasks.map(p => (
             <li key={p.taskid}>
