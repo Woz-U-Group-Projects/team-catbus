@@ -40,7 +40,8 @@ class Task extends React.Component {
     return (
       <div className='tc'>
         <h3 className='f1'>Game Geek</h3>
-        <img src = "logo.png" alt ="gamegeek_logo" width="500" height="500"></img>
+        <img src = "logo.png" alt ="gamegeek_logo" width="200" height="200">
+          </img>
         
         <SearchBox />
         <ul>
