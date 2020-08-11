@@ -39,7 +39,9 @@ class Task extends React.Component {
   render() {
     return (
       <div className='tc'>
-        <h3 className='f1'>List of tasks (React)</h3>
+        <h3 className='f1'>Game Geek</h3>
+        <img src = "logo.png" alt ="gamegeek_logo" width="500" height="500"></img>
+        
         <SearchBox />
         <ul>
           {this.state.tasks.map(p => (
