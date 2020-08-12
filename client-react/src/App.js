@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
   Route,
@@ -7,7 +7,7 @@ import Task from './components/Task';
 import Card from './CardInfo';
 import './App.css';
 
-class App extends React.Component {
+class App extends Component {
   render() {
     return (
       <Router>
