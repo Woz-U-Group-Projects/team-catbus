@@ -1,7 +1,9 @@
 import React from "react";
 import axios from "axios";
 import SearchBox from '../components/SearchBox';
-import '../task.min.css'
+import '../task.min.css';
+import './Task.css';
+
 class Task extends React.Component {
   constructor(props) {
     super(props);
@@ -40,8 +42,8 @@ class Task extends React.Component {
     return (
       <div className='tc'>
         <h3 className='f1'>Game Geek</h3>
-        <img src = "logo.png" alt ="gamegeek_logo" width="200" height="200">
-          </img>
+        <div alt ="gamegeek_logo" >
+          </div>
         
         <SearchBox />
         <ul>
