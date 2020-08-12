@@ -1,10 +1,11 @@
-import React from "react";
+import React from 'react';
 import {
   BrowserRouter as Router,
   Route,
 } from 'react-router-dom';
-import Task from "./components/Task";
-import "./App.css";
+import Task from './components/Task';
+import Card from './CardInfo';
+import './App.css';
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
       <Router>
         <div className="App">
           <Route path="/" component={Task} exact />
+          <Route path="/GameInfo" component={Card} />
         </div>
       </Router>
     );

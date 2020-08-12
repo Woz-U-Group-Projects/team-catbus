@@ -1,5 +1,5 @@
-import React from "react";
-import axios from "axios";
+import React from 'react';
+import axios from 'axios';
 import SearchBox from '../components/SearchBox';
 import '../task.min.css'
 class Task extends React.Component {
