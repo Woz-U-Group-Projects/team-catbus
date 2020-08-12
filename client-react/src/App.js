@@ -7,7 +7,7 @@ import Task from './components/Task';
 import Card from './CardInfo';
 import './App.css';
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
       <Router>
