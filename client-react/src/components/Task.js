@@ -3,6 +3,7 @@ import axios from "axios";
 import SearchBox from '../components/SearchBox';
 import '../task.min.css';
 import './Task.css';
+import logo from './logo.png';
 
 class Task extends React.Component {
   constructor(props) {
@@ -23,12 +24,12 @@ class Task extends React.Component {
     //let url = "http://localhost:5000/projects";
 
     // Express uses port 3001 (react uses 3000)
-    let url = "http://localhost:3001/tasks";
+    let url = "http://localhost:8080/tasks";
     axios.get(url).then(response => this.setState({ tasks: response.data }));
   };
 
   addTask = () => {
-    let url = "http://localhost:3001/tasks";
+    let url = "http://localhost:8080/tasks";
     axios.post(url, { name: this.taskName.current.value }).then(response => {
       // refresh the data
       this.getData();
@@ -41,9 +42,9 @@ class Task extends React.Component {
   render() {
     return (
       <div className='tc'>
-        <h3 className='f1'>Game Geek</h3>
-        <div alt ="gamegeek_logo" >
-          </div>
+        <h1 className='f1'>Your One Stop Game Source!</h1>
+        <img src={logo} alt ="Logo" />
+      
         
         <SearchBox />
         <ul>
