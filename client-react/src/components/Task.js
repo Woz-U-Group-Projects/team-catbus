@@ -1,10 +1,10 @@
-import React from "react";
-import axios from "axios";
+import React from 'react';
+import axios from 'axios';
 import SearchBox from '../components/SearchBox';
-import '../task.min.css';
 import './Task.css';
 import logo from './logo.png';
-
+import Card from '../CardInfo';
+import '../task.min.css'
 class Task extends React.Component {
   constructor(props) {
     super(props);
@@ -47,6 +47,7 @@ class Task extends React.Component {
       
         
         <SearchBox />
+        <Card />
         <ul>
           {this.state.tasks.map(p => (
             <li key={p.taskid}>
