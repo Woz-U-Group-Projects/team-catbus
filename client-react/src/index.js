@@ -5,6 +5,7 @@ import App from './App';
 import 'tachyons';
 import { Fragment } from 'react';
 import * as serviceWorker from './serviceWorker';
+import 'tachyons';
 
 ReactDOM.render(
   <React.StrictMode>
