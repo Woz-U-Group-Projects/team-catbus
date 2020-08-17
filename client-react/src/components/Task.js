@@ -1,6 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 import SearchBox from '../components/SearchBox';
+import './Task.css';
+import logo from './logo.png';
 import Card from '../CardInfo';
 import '../task.min.css'
 class Task extends React.Component {
@@ -22,12 +24,12 @@ class Task extends React.Component {
     //let url = "http://localhost:5000/projects";
 
     // Express uses port 3001 (react uses 3000)
-    let url = "http://localhost:3001/tasks";
+    let url = "http://localhost:8080/tasks";
     axios.get(url).then(response => this.setState({ tasks: response.data }));
   };
 
   addTask = () => {
-    let url = "http://localhost:3001/tasks";
+    let url = "http://localhost:8080/tasks";
     axios.post(url, { name: this.taskName.current.value }).then(response => {
       // refresh the data
       this.getData();
@@ -40,7 +42,10 @@ class Task extends React.Component {
   render() {
     return (
       <div className='tc'>
-        <h3 className='f1'>List of tasks (React)</h3>
+        <h1 className='f1'>Your One Stop Game Source!</h1>
+        <img src={logo} alt ="Logo" />
+      
+        
         <SearchBox />
         <Card />
         <ul>
